@@ -1,6 +1,6 @@
 import './App.css';
-import Settings from './Settings';
-import {Button} from '@mui/material'
+import Intro from './Pages/Intro';
+import Settings from './Pages/Settings';
 
 export default function App() {
   return (
@@ -9,17 +9,8 @@ export default function App() {
         <title>Durak</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
-      <Title/ >
+      <Intro/ >
       <Settings/ >
-    </div>
-  );
-}
-
-function Title() {
-  return (
-    <div className="TitleScreen">
-      <h1>Durak</h1>
-      <Button variant="contained">Start</Button>
     </div>
   );
 }

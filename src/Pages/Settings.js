@@ -1,24 +1,5 @@
 import './Settings.css';
 
-function SettingButton() {
-  let value = false;
-  let active = 'Settings-button-off';
-  value ? active = 'Settings-button-on' : active = 'Settings-button-on';
-  function handleClick(){
-    if (value === false){
-      value = true;
-    } 
-    else{
-      value = false;
-    }
-  }
-  return( // make the button be red when off and green when on
-    <button class={active} onclick={handleClick}>
-      Siege Durak
-    </button>
-  );
-}
-
 export default function Settings() {
   return (
     <div className='Settings'>

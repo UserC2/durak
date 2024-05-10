@@ -5,6 +5,8 @@
 
 .Settings-header {
   font-size: calc(20px + 2vmin);
+  text-align: left;
+  margin-left: 20px;
 }
 
 .Settings-header2{

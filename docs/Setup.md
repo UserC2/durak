@@ -1,0 +1,1 @@
+After installing the repository, run `npm install` to download all dependencies for this project.

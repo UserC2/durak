@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function SettingButton() {
+  let value = false;
+  let active = 'Settings-button-off';
+  value ? active = 'Settings-button-on' : active = 'Settings-button-on';
+  function handleClick(){
+    if (value === false){
+      value = true;
+    } 
+    else{
+      value = false;
+    }
+  }
+  return( // make the button be red when off and green when on
+    <button class={active} onclick={handleClick}>
+      Siege Durak
+    </button>
+  );
+}
+
+function Settings() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='Settings'>
+        <h1 class='Settings-header'>
+          Settings
+        </h1>
+        <h3 class='Settings-header2'>
+          Game Modes
+        </h3>
+        <SettingButton />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        The attacker may launch the first attack with multiple cards of the same rank. Instead of attacking in order, any player may add on to the attack at any time.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
 
-export default App;
+export default Settings;
